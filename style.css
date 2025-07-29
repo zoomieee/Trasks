@@ -106,3 +106,23 @@ input[type="checkbox"] + label {
   color: red !important;
 }
 
+input,
+button {
+  background-color: black;
+  color: red;
+  border: 1px solid red;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+
+/* Optional: red placeholder text too */
+::placeholder {
+  color: red;
+}
