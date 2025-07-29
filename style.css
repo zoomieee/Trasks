@@ -76,3 +76,17 @@ button:hover {
   width: 40px;
   height: 40px;
 }
+
+* {
+  color: red !important;
+  border-color: red !important;
+}
+
+::placeholder {
+  color: red !important;
+}
+
+input[type="checkbox"] + label {
+  color: red !important;
+}
+
