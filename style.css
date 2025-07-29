@@ -7,8 +7,14 @@ body {
 body {
   background: url('background.gif') no-repeat center center fixed;
   background-size: cover;
-  color: #ffffff;
-  text-shadow: 1px 1px 2px #000;
+  color: red;
+  font-family: sans-serif;
+  padding: 20px;
+  text-shadow: none;
+}
+
+h1, h2, h3, h4, h5, h6, label, p, span, div, button, input, li {
+  color: red !important;
 }
 
 
@@ -65,19 +71,6 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-body {
-  background: url('background.gif') no-repeat center center fixed;
-  background-size: cover;
-  color: red;
-  font-family: sans-serif;
-  padding: 20px;
-  text-shadow: none;
-}
-
-h1, h2, h3, h4, h5, h6, label, p, span, div, button, input, li {
-  color: red !important;
 }
 
 
