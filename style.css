@@ -60,6 +60,13 @@ button:hover {
   align-items: center;
 }
 
+body {
+  background: url('background.gif') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: sans-serif;
+  padding: 20px;
+}
 
 label {
   display: block;
