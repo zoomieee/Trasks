@@ -44,18 +44,36 @@ function render() {
     section.appendChild(addButton);
 
     packingData[category].forEach((item, index) => {
-      const label = document.createElement('label');
-      const checkbox = document.createElement('input');
-      checkbox.type = 'checkbox';
-      checkbox.checked = item.checked;
-      checkbox.onchange = () => {
-        packingData[category][index].checked = checkbox.checked;
-        saveData();
-      };
-      label.appendChild(checkbox);
-      label.appendChild(document.createTextNode(item.text));
-      section.appendChild(label);
-    });
+  const itemContainer = document.createElement('div');
+  itemContainer.className = 'item-row';
+
+  const label = document.createElement('label');
+  const checkbox = document.createElement('input');
+  checkbox.type = 'checkbox';
+  checkbox.checked = item.checked;
+  checkbox.onchange = () => {
+    packingData[category][index].checked = checkbox.checked;
+    saveData();
+  };
+
+  const textNode = document.createTextNode(item.text);
+  label.appendChild(checkbox);
+  label.appendChild(textNode);
+
+  const deleteBtn = document.createElement('button');
+  deleteBtn.textContent = '❌';
+  deleteBtn.className = 'delete-button';
+  deleteBtn.onclick = () => {
+    packingData[category].splice(index, 1);
+    saveData();
+    render();
+  };
+
+  itemContainer.appendChild(label);
+  itemContainer.appendChild(deleteBtn);
+  section.appendChild(itemContainer);
+});
+
 
     container.appendChild(section);
   });
