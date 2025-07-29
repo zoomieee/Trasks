@@ -21,9 +21,25 @@ function render() {
     const section = document.createElement('div');
     section.className = 'category';
 
-    const title = document.createElement('h2');
-    title.textContent = category;
-    section.appendChild(title);
+    const titleContainer = document.createElement('div');
+titleContainer.className = 'category-title';
+
+const title = document.createElement('h2');
+title.textContent = category;
+
+const deleteCategoryBtn = document.createElement('button');
+deleteCategoryBtn.textContent = '🗑️';
+deleteCategoryBtn.className = 'delete-button';
+deleteCategoryBtn.onclick = () => {
+  delete packingData[category];
+  saveData();
+  render();
+};
+
+titleContainer.appendChild(title);
+titleContainer.appendChild(deleteCategoryBtn);
+section.appendChild(titleContainer);
+
 
     const itemInput = document.createElement('input');
     itemInput.type = 'text';
