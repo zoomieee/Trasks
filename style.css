@@ -21,6 +21,13 @@ input[type="text"], input[type="checkbox"] {
   color: red;
 }
 
+.add-category-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 .add-category-container input,
 .add-category-container button {
   background-color: black;
