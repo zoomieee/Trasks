@@ -21,6 +21,14 @@ input[type="text"], input[type="checkbox"] {
   color: red;
 }
 
+.acontrols {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 button {
   padding: 10px;
   margin-bottom: 10px;
