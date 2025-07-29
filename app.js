@@ -107,3 +107,8 @@ function addCategory() {
 }
 
 document.addEventListener('DOMContentLoaded', render);
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', render);
+} else {
+  render();
+}
