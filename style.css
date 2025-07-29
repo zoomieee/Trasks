@@ -21,13 +21,19 @@ input[type="text"], input[type="checkbox"] {
   color: red;
 }
 
-.add-category-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
+.add-category-container input,
+.add-category-container button {
+  background-color: black;
+  color: red;
+  border: 1px solid red;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.add-category-container button:hover {
+  background-color: #222;
+  cursor: pointer;
 }
 
 
