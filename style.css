@@ -38,6 +38,28 @@ button:hover {
   border: 1px solid #333;
   border-radius: 8px;
 }
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  color: #ff5c5c;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.category-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 label {
   display: block;
