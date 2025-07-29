@@ -70,10 +70,16 @@ button:hover {
 body {
   background: url('background.gif') no-repeat center center fixed;
   background-size: cover;
-  color: white;
+  color: red;
   font-family: sans-serif;
   padding: 20px;
+  text-shadow: none;
 }
+
+h1, h2, h3, h4, h5, h6, label, p, span, div, button, input, li {
+  color: red !important;
+}
+
 
 label {
   display: block;
