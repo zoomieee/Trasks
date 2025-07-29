@@ -31,10 +31,7 @@ input[type="text"], input[type="checkbox"] {
   border-radius: 5px;
 }
 
-.add-category-container button:hover {
-  background-color: #222;
-  cursor: pointer;
-}
+
 
 
 button {
